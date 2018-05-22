@@ -1,4 +1,6 @@
-This is a simple ReactJS project to login and display training API data (Rails API)
+# Training - Web  App
+
+This is a **ReactJS** project to login and display training data built with a Rails REST API
 
 We are using:
 
@@ -9,17 +11,24 @@ We are using:
 - Redux-Thunk 2.2
 - React-bootstrap 0.3
 
-Theme:
+## Theme
 - Bootstrap 3
 - Customization: https://bootswatch.com/united/
 
+## Database
+I made a REST Rails API to get and save the information.
+https://github.com/matiasjg/training-api
 
-Sessions: I am using sessionStorage to keep the logged in user.
-Database: I made a REST Rails APP to get and save the information.
-
-Author: Matias Gonzalez (matiasjg@gmail.com)
-
-
-* TODO: *
+## Possible Improvements
 - Add the feature to change the training status.
 - Move some common functions like filter plan or filter training from the store.plans/store.trainings to a common lib file.
+- Login using OAuth
+
+## Features Included
+- Simple Login
+- User Registration
+- Session with browser sessionStorage
+- Display plans with different type of training exercises
+- Detailed page of training exercise with videos.
+
+*Author: Matias Gonzalez (matiasjg@gmail.com)*
