@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { ButtonToolbar, Button, Alert } from 'react-bootstrap';
 
 import { registerUser } from '../actions/user';
+import { cleanTrainings } from '../actions/trainings';
 
 
 const mapStateToProps = (store) => {
@@ -15,6 +16,7 @@ const mapStateToProps = (store) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         registerUser: (name, email, password) => {
+            dispatch(cleanTrainings())
             dispatch(registerUser(name, email, password))
         },
     }

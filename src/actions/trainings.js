@@ -10,6 +10,11 @@ export const setPlanTrainings = (payload) => ({
   payload
 });
 
+// this will clean up session trainings
+export const cleanTrainings = (payload) => ({
+  type: 'CLEAN_TRAININGS',
+  payload
+});
 
 // this will return user started trainings
 export const getTrainings = (userId) => ({

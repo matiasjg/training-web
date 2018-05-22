@@ -20,7 +20,7 @@ class Menu extends Component {
             <Navbar inverse collapseOnSelect className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/" className="navbar-brand">EH</Link>
+                        <Link to="/" className="navbar-brand">Traing App</Link>
                     </Navbar.Brand>
 
                     <Navbar.Toggle>

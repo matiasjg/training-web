@@ -7,12 +7,12 @@ import Login from "./Login";
 import Register from "./Register";
 
 import { logInSession } from '../actions/user';
+import { cleanTrainings } from '../actions/trainings';
 
 const mapStateToProps = (store) => {
     return {
         user: store.user,
         plans: store.plans,
-        //trainings: store.trainings.list,
     }
 }
 
@@ -20,6 +20,7 @@ const mapStateToProps = (store) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         logInSession: () => {
+            dispatch(cleanTrainings())
             dispatch(logInSession())
         },
     }

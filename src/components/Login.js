@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { Alert } from 'react-bootstrap';
 
 import { logIn } from '../actions/user';
+import { cleanTrainings } from '../actions/trainings';
 
 
 const mapStateToProps = (store) => {
@@ -15,6 +16,7 @@ const mapStateToProps = (store) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         logInUser: (email, passwd) => {
+            dispatch(cleanTrainings())
             dispatch(logIn(email, passwd))
         },
     }
